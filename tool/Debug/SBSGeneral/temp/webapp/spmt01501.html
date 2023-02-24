@@ -1,0 +1,171 @@
+
+<meta charset="UTF-8">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<div class="headerError">{{message}}</div>
+<div class="headerError">{{updatetimeMessage}}</div>
+<form name="spmt01501" id="spmt01501" action="">
+	<section>
+		<!-- 検索条件 -->
+		<h2 class="master">{{formItemNm1}}</h2>
+		<div class="row mb-10 form-group">
+			<div class="col-md-2 text-center">{{formItemNm2}}</div>
+			<div class="col-md-3">
+				<input class="form-control" drt-string type="text" id="buyercd" name="buyercd" data-ng-model="buyercd" value="" autofocus />
+				<div class="inputError">{{buyercdMessage}}</div>
+			</div>
+			<div class="col-md-2 text-center">{{formItemNm3}}</div>
+			<div class="col-md-3">
+				<input class="form-control" drt-string type="text" name="buyernm" data-ng-model="buyernm" value="" />
+				<div class="inputError">{{buyernmMessage}}</div>
+			</div>
+		</div>
+		<div class="row form-group m-0">
+			<div class="col-md-9"></div>
+			<div class="col-md-3 text-right">
+				<input type="button" id="btnSearch" data-ng-click="btnSearchClick();"
+				class="btn green" name="{{formItemNm4}}" value="{{formItemNm4}}">
+				<input type="button" id="btnClear" data-ng-click="btnClearClick();"
+				class="btn green" name="{{formItemNm5}}" value="{{formItemNm5}}">
+			</div>
+		</div>
+	</section>
+	<div style="height: 10px"></div>
+
+	<section>
+		<h2 class="master">{{formItemNm6}}</h2>
+		<div style="float: left; padding-left: 5px;">{{formItemNm35}}: {{recordsCnt}}{{formItemNm36}}</div>
+		<div ng-controller="PagingController"
+			style="float: right; padding-right: 25px">
+			<div id="pagerString"></div>
+		</div>
+		<br/>
+		<div id="gridHandsontable"></div>
+		<input type="hidden" ng-value="recNum" />
+	</section>
+
+	<hr style="height: 4px; background: #948A54; margin-left: 0px; margin-right: 0px;" />
+	<section>
+		<div class="row form-group">
+			<div class="col-md-12 text-right">
+				<input type="button" id="btnNew" data-ng-click="btnNewClick();" class="btn green"
+				name="{{formItemNm31}}" value="{{formItemNm31}}"/>
+			</div>
+		</div>
+		<div class="row form-group">
+			<div class="col-md-2">{{formItemNm19}}<font color="red">*</font></div>
+			<div class="col-md-3">
+				<input drt-string type="text" name="buyercdAddNew" data-ng-model="buyercdAddNew" ng-readonly="chkOptCls" value="" />
+				<div class="inputError">{{buyercdAddNewMessage}}</div>
+			</div>
+			<div class="col-md-2">{{formItemNm28}}</div>
+			<div class="col-md-3">
+				<input drt-string type="text" name="buyerusrnm" data-ng-model="buyerusrnm" value=""/>
+				<div class="inputError">{{buyerusrnmMessage}}</div>
+			</div>
+		</div>
+		<div class="row form-group">
+			<div class="col-md-2">{{formItemNm20}}<font color="red">*</font></div>
+			<div class="col-md-5">
+				<input drt-string type="text" name="buyernmAddNew" data-ng-model="buyernmAddNew" value="" />
+				<div class="inputError">{{buyernmAddNewMessage}}</div>
+			</div>
+		</div>
+		<div class="row form-group">
+			<div class="col-md-2">{{formItemNm21}}<font color="red">*</font></div>
+			<div class="col-md-5">
+				<input drt-string type="text" name="buyerrnmAddNew" data-ng-model="buyerrnmAddNew" value=""/>
+				<div class="inputError">{{buyerrnmAddNewMessage}}</div>
+			</div>
+		</div>
+
+		<div class="row form-group">
+				<div class="col-md-2">{{formItemNm26}}</div>
+				<div class="col-md-3">
+					<input drt-string type="text" name="buyertel" data-ng-model="buyertel" value=""/>
+					<div class="inputError">{{buyertelMessage}}</div>
+				</div>
+				<div class="col-md-2">{{formItemNm27}}</div>
+				<div class="col-md-3">
+					<input drt-string type="text" name="buyerfax" data-ng-model="buyerfax" value=""/>
+					<div class="inputError">{{buyerfaxMessage}}</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row form-group">
+				<div class="col-md-2">{{formItemNm22}}</div>
+				<div class="col-md-6">
+					<input drt-string type="text" name="buyerzip" data-ng-model="buyerzip" value=""/>
+					<input type="button" data-ng-click="btnZipClick();" id="btnZip" class="btn green" name="{{::formItemNm37}}" value="{{::formItemNm37}}" >
+					<div class="inputError">{{buyerzipMessage}}</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row form-group">
+			<div class="col-md-2">{{formItemNm23}}</div>
+			<div class="col-md-5">
+				<input drt-string type="text" name="buyeradrs1" data-ng-model="buyeradrs1" value="" style="width: 400px"/>
+				<div class="inputError">{{buyeradrs1Message}}</div>
+			</div>
+		</div>
+
+		<div class="row form-group">
+			<div class="col-md-2">{{formItemNm24}}</div>
+			<div class="col-md-5">
+				<input drt-string type="text" name="buyeradrs2" data-ng-model="buyeradrs2" value="" style="width: 400px"/>
+				<div class="inputError">{{buyeradrs2Message}}</div>
+			</div>
+		</div>
+
+		<div class="row form-group">
+			<div class="col-md-2">{{formItemNm25}}</div>
+			<div class="col-md-5">
+				<input drt-string type="text" name="buyeradrs3" data-ng-model="buyeradrs3" value="" style="width: 400px"/>
+				<div class="inputError">{{buyeradrs3Message}}</div>
+			</div>
+		</div>
+
+		<div class="row form-group">
+			<div class="col-md-2">{{formItemNm29}}</div>
+			<div class="col-md-5">
+				<input drt-string type="text" name="buyermailadrs" data-ng-model="buyermailadrs" value=""/>
+				<div class="inputError">{{buyermailadrsMessage}}</div>
+			</div>
+		</div>
+
+		<div class="row form-group">
+			<div class="col-md-2">{{formItemNm34}}</div>
+			<div class="col-md-5">
+				<input drt-string type="text" name="buyersortno" data-ng-model="buyersortno" value=""/>
+				<div class="inputError">{{buyersortnoMessage}}</div>
+								<input type="button" id="btnTest" data-ng-click="btnTestClick();"
+				class="btn green" name="Test Popup" value="Test Popup">
+			</div>
+		</div>
+
+		<div class="row form-group">
+			<div class="col-md-2">{{formItemNm30}}</div>
+			<div class="col-md-5">
+				<textarea data-ng-model="buyerremark" cols="50" rows="5" style="width: 600px;"></textarea>
+				<div class="inputError">{{buyerremarkMessage}}</div>
+			</div>
+		</div>
+
+		<input id="updatetime" type="hidden" ng-value="updatetime" />
+
+		<div class="row form-group">
+			<div	class="col-md-6">
+				<input type="button" id="btnConfirm" data-ng-click="btnConfirmClick();"
+				class="btn green" name="{{formItemNm32}}" value="{{formItemNm32}}">
+			</div>
+			<div	class="col-md-6 text-right">
+				<input type="button" id="btnDelete" data-ng-click="btnDeleteClick();"
+				class="btn green" name="{{formItemNm33}}" value="{{formItemNm33}}">
+			</div>
+		</div>
+	</section>
+	<input type="hidden" ng-value="hiddenMODE" />
+</form>

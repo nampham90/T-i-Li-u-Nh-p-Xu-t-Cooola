@@ -1,0 +1,109 @@
+<html> 
+ 
+<head> 
+<meta charset="UTF-8"> 
+<style> 
+	.no-padding-right { 
+	    padding-right: 0px !important; 
+	} 
+	.no-padding-left { 
+	    padding-left: 0px !important; 
+	} 
+	.no-padding { 
+	    padding-right: 0px !important; 
+	    padding-left: 0px !important; 
+	} 
+	.subwindow .form-group { 
+		margin-bottom: 5px; 
+	} 
+</style> 
+</head> 
+<div class="subwindow"> 
+	<!-- 荷主コード検索 --> 
+	<div class="subWindowTitle">{{::formItemNm0}}</div> 
+	<div class="inputError">{{Message}}</div> 
+ 
+	<section> 
+		<!-- 検索条件 --> 
+		<h2 class="master">{{::formItemNm1}}</h2> 
+ 
+		<div class="row mb-10 form-group"> 
+			<div class="col-md-5 no-padding-right"> 
+				<div class="col-md-6 no-padding-right"><small>{{::formItemNm2}}</small></div> 
+				<div class="col-md-6 no-padding-right"> 
+					<input drt-string type="text" style="width: 80%" id="a" name="a" data-ng-model="a" value="" autofocus /> 
+					<div class="inputError">{{aMessage}}</div> 
+				</div> 
+			</div> 
+			<div class="col-md-1 no-padding text-center">～</div> 
+			<div class="col-md-5 no-padding-left"> 
+			</div> 
+		</div> 
+ 
+		<div class="row mb-10 form-group"> 
+			<div class="col-md-5 no-padding-right"> 
+				<div class="col-md-6 no-padding-right"><small>{{::formItemNm3}}</small></div> 
+				<div class="col-md-6 no-padding-right"> 
+					<input drt-string type="text" style="width: 80%" id="b" name="b" data-ng-model="b" value="" autofocus /> 
+					<div class="inputError">{{bMessage}}</div> 
+				</div> 
+			</div> 
+			<div class="col-md-1 no-padding text-center">～</div> 
+			<div class="col-md-5 no-padding-left"> 
+			</div> 
+		</div> 
+ 
+		<div class="row mb-10 form-group"> 
+			<div class="col-md-5 no-padding-right"> 
+				<div class="col-md-6 no-padding-right"><small>{{::formItemNm4}}</small></div> 
+				<div class="col-md-6 no-padding-right"> 
+					<input drt-string type="text" style="width: 80%" id="c" name="c" data-ng-model="c" value="" autofocus /> 
+					<div class="inputError">{{cMessage}}</div> 
+				</div> 
+			</div> 
+			<div class="col-md-1 no-padding text-center">～</div> 
+			<div class="col-md-5 no-padding-left"> 
+			</div> 
+		</div> 
+ 
+		<div class="row mb-10 form-group"> 
+			<div class="col-md-5 no-padding-right"> 
+				<div class="col-md-6 no-padding-right"><small>{{::formItemNm5}}</small></div> 
+				<div class="col-md-6 no-padding-right"> 
+					<input drt-string type="text" style="width: 80%" id="d" name="d" data-ng-model="d" value="" autofocus /> 
+					<div class="inputError">{{dMessage}}</div> 
+				</div> 
+			</div> 
+			<div class="col-md-1 no-padding text-center">～</div> 
+			<div class="col-md-5 no-padding-left"> 
+			</div> 
+		</div> 
+ 
+		<div class="row form-group m-0"> 
+			<div class="col-md-6"></div> 
+			<div class="col-md-6 text-right" style="padding-right: 30px;"> 
+				<input type="button" id="btnSearch" data-ng-click="btnSearchClick();" 
+				class="button button-green" name="{{::formItemNm15}}" value="{{::formItemNm12}}"> 
+				<input type="button" id="btnClear" data-ng-click="btnClearClick();" 
+				class="button button-green" name="{{::formItemNm16}}" value="{{::formItemNm13}}"> 
+			</div> 
+		</div> 
+	</section> 
+	<div style="height: 10px"></div> 
+ 
+	<section> 
+		<h2 class="master">{{::formItemNm14}}</h2> 
+		<div style="float: left; padding-left: 5px;">{{formItemNm15}}{{recordsCnt}}{{formItemNm16}}</div> 
+		<br/> 
+		<div id="gridHandsontableModal"></div> 
+		<input type="hidden" ng-value="recNum" /> 
+ 
+		<div class="row form-group m-0"> 
+			<div class="col-md-6"></div> 
+			<div class="col-md-6 text-right" style="padding-right: 30px;"> 
+				<input type="button" data-ng-click="btnCloseClick();" class="button button-green" name="{{::formItemNm17}}" value="{{::formItemNm17}}"> 
+			</div> 
+		</div> 
+	</section> 
+</div> 
+</html> 

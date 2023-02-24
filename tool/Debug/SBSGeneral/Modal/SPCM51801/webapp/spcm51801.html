@@ -1,0 +1,187 @@
+<html> 
+ 
+<head> 
+<meta charset="UTF-8"> 
+<style> 
+	.no-padding-right { 
+	    padding-right: 0px !important; 
+	} 
+	.no-padding-left { 
+	    padding-left: 0px !important; 
+	} 
+	.no-padding { 
+	    padding-right: 0px !important; 
+	    padding-left: 0px !important; 
+	} 
+	.subwindow .form-group { 
+		margin-bottom: 5px; 
+	} 
+</style> 
+</head> 
+<div class="subwindow"> 
+	<!-- 荷主コード検索 --> 
+	<div class="subWindowTitle">{{::formItemNm0}}</div> 
+	<div class="inputError">{{Message}}</div> 
+ 
+	<section> 
+		<!-- 検索条件 --> 
+		<h2 class="master">{{::formItemNm1}}</h2> 
+ 
+		<div class="row mb-10 form-group"> 
+			<div class="col-md-5 no-padding-right"> 
+				<div class="col-md-6 no-padding-right"><small>{{::formItemNm2}}</small></div> 
+				<div class="col-md-6 no-padding-right"> 
+					<input drt-string type="text" style="width: 80%" id="cstmordnosearch" name="cstmordnosearch" data-ng-model="cstmordnosearch" value="" autofocus /> 
+					<div class="inputError">{{cstmordnosearchMessage}}</div> 
+				</div> 
+			</div> 
+			<div class="col-md-1 no-padding text-center">～</div> 
+			<div class="col-md-5 no-padding-left"> 
+			</div> 
+		</div> 
+ 
+		<div class="row mb-10 form-group"> 
+			<div class="col-md-5 no-padding-right"> 
+				<div class="col-md-6 no-padding-right"><small>{{::formItemNm3}}</small></div> 
+				<div class="col-md-6 no-padding-right"> 
+					<input drt-string type="text" style="width: 80%" id="arvlplndatefromsearch" name="arvlplndatefromsearch" data-ng-model="arvlplndatefromsearch" value="" autofocus /> 
+					<div class="inputError">{{arvlplndatefromsearchMessage}}</div> 
+				</div> 
+			</div> 
+			<div class="col-md-1 no-padding text-center">～</div> 
+			<div class="col-md-5 no-padding-left"> 
+			</div> 
+		</div> 
+ 
+		<div class="row mb-10 form-group"> 
+			<div class="col-md-5 no-padding-right"> 
+				<div class="col-md-6 no-padding-right"><small>{{::formItemNm4}}</small></div> 
+				<div class="col-md-6 no-padding-right"> 
+					<input drt-string type="text" style="width: 80%" id="arvlplndatetosearch" name="arvlplndatetosearch" data-ng-model="arvlplndatetosearch" value="" autofocus /> 
+					<div class="inputError">{{arvlplndatetosearchMessage}}</div> 
+				</div> 
+			</div> 
+			<div class="col-md-1 no-padding text-center">～</div> 
+			<div class="col-md-5 no-padding-left"> 
+			</div> 
+		</div> 
+ 
+		<div class="row mb-10 form-group"> 
+			<div class="col-md-5 no-padding-right"> 
+				<div class="col-md-6 no-padding-right"><small>{{::formItemNm5}}</small></div> 
+				<div class="col-md-6 no-padding-right"> 
+					<input drt-string type="text" style="width: 80%" id="arvlrdatefromsearch" name="arvlrdatefromsearch" data-ng-model="arvlrdatefromsearch" value="" autofocus /> 
+					<div class="inputError">{{arvlrdatefromsearchMessage}}</div> 
+				</div> 
+			</div> 
+			<div class="col-md-1 no-padding text-center">～</div> 
+			<div class="col-md-5 no-padding-left"> 
+			</div> 
+		</div> 
+ 
+		<div class="row mb-10 form-group"> 
+			<div class="col-md-5 no-padding-right"> 
+				<div class="col-md-6 no-padding-right"><small>{{::formItemNm6}}</small></div> 
+				<div class="col-md-6 no-padding-right"> 
+					<input drt-string type="text" style="width: 80%" id="arvlrdatetosearch" name="arvlrdatetosearch" data-ng-model="arvlrdatetosearch" value="" autofocus /> 
+					<div class="inputError">{{arvlrdatetosearchMessage}}</div> 
+				</div> 
+			</div> 
+			<div class="col-md-1 no-padding text-center">～</div> 
+			<div class="col-md-5 no-padding-left"> 
+			</div> 
+		</div> 
+ 
+		<div class="row mb-10 form-group"> 
+			<div class="col-md-5 no-padding-right"> 
+				<div class="col-md-6 no-padding-right"><small>{{::formItemNm7}}</small></div> 
+				<div class="col-md-6 no-padding-right"> 
+					<input drt-string type="text" style="width: 80%" id="arvlrstckdatefromsearch" name="arvlrstckdatefromsearch" data-ng-model="arvlrstckdatefromsearch" value="" autofocus /> 
+					<div class="inputError">{{arvlrstckdatefromsearchMessage}}</div> 
+				</div> 
+			</div> 
+			<div class="col-md-1 no-padding text-center">～</div> 
+			<div class="col-md-5 no-padding-left"> 
+			</div> 
+		</div> 
+ 
+		<div class="row mb-10 form-group"> 
+			<div class="col-md-5 no-padding-right"> 
+				<div class="col-md-6 no-padding-right"><small>{{::formItemNm8}}</small></div> 
+				<div class="col-md-6 no-padding-right"> 
+					<input drt-string type="text" style="width: 80%" id="arvlrstckdatetosearch" name="arvlrstckdatetosearch" data-ng-model="arvlrstckdatetosearch" value="" autofocus /> 
+					<div class="inputError">{{arvlrstckdatetosearchMessage}}</div> 
+				</div> 
+			</div> 
+			<div class="col-md-1 no-padding text-center">～</div> 
+			<div class="col-md-5 no-padding-left"> 
+			</div> 
+		</div> 
+ 
+		<div class="row mb-10 form-group"> 
+			<div class="col-md-5 no-padding-right"> 
+				<div class="col-md-6 no-padding-right"><small>{{::formItemNm9}}</small></div> 
+				<div class="col-md-6 no-padding-right"> 
+					<input drt-string type="text" style="width: 80%" id="sliplnnosearch" name="sliplnnosearch" data-ng-model="sliplnnosearch" value="" autofocus /> 
+					<div class="inputError">{{sliplnnosearchMessage}}</div> 
+				</div> 
+			</div> 
+			<div class="col-md-1 no-padding text-center">～</div> 
+			<div class="col-md-5 no-padding-left"> 
+			</div> 
+		</div> 
+ 
+		<div class="row mb-10 form-group"> 
+			<div class="col-md-5 no-padding-right"> 
+				<div class="col-md-6 no-padding-right"><small>{{::formItemNm10}}</small></div> 
+				<div class="col-md-6 no-padding-right"> 
+					<input drt-string type="text" style="width: 80%" id="siplnrsltnosearch" name="siplnrsltnosearch" data-ng-model="siplnrsltnosearch" value="" autofocus /> 
+					<div class="inputError">{{siplnrsltnosearchMessage}}</div> 
+				</div> 
+			</div> 
+			<div class="col-md-1 no-padding text-center">～</div> 
+			<div class="col-md-5 no-padding-left"> 
+			</div> 
+		</div> 
+ 
+		<div class="row mb-10 form-group"> 
+			<div class="col-md-5 no-padding-right"> 
+				<div class="col-md-6 no-padding-right"><small>{{::formItemNm11}}</small></div> 
+				<div class="col-md-6 no-padding-right"> 
+					<input drt-string type="text" style="width: 80%" id="spplynmsearch" name="spplynmsearch" data-ng-model="spplynmsearch" value="" autofocus /> 
+					<div class="inputError">{{spplynmsearchMessage}}</div> 
+				</div> 
+			</div> 
+			<div class="col-md-1 no-padding text-center">～</div> 
+			<div class="col-md-5 no-padding-left"> 
+			</div> 
+		</div> 
+ 
+		<div class="row form-group m-0"> 
+			<div class="col-md-6"></div> 
+			<div class="col-md-6 text-right" style="padding-right: 30px;"> 
+				<input type="button" id="btnSearch" data-ng-click="btnSearchClick();" 
+				class="button button-green" name="{{::formItemNm15}}" value="{{::formItemNm12}}"> 
+				<input type="button" id="btnClear" data-ng-click="btnClearClick();" 
+				class="button button-green" name="{{::formItemNm16}}" value="{{::formItemNm13}}"> 
+			</div> 
+		</div> 
+	</section> 
+	<div style="height: 10px"></div> 
+ 
+	<section> 
+		<h2 class="master">{{::formItemNm14}}</h2> 
+		<div style="float: left; padding-left: 5px;">{{formItemNm15}}{{recordsCnt}}{{formItemNm16}}</div> 
+		<br/> 
+		<div id="gridHandsontableModal"></div> 
+		<input type="hidden" ng-value="recNum" /> 
+ 
+		<div class="row form-group m-0"> 
+			<div class="col-md-6"></div> 
+			<div class="col-md-6 text-right" style="padding-right: 30px;"> 
+				<input type="button" data-ng-click="btnCloseClick();" class="button button-green" name="{{::formItemNm17}}" value="{{::formItemNm17}}"> 
+			</div> 
+		</div> 
+	</section> 
+</div> 
+</html> 
