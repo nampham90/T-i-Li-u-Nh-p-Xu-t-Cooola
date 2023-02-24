@@ -1,0 +1,12 @@
+SPOT00251 : Đăng ký xuất hàng  | 出荷指示登録
+
+SPOT92101 : check địa chỉ      | 送付状データ確定
+
+SPOT00611 : Phân chia          | 在庫引当・取消
+
+SPOT01101 : xuất số PL         | 作業指示リスト発行
+
+Pick Hàng: Handy
+Kiểm Hàng: Handy
+
+SPOT02201: Hoàn thành xuất hàng : 出荷完了登録 
